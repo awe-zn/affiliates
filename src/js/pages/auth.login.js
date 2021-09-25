@@ -48,7 +48,7 @@ class AuthLogin {
           email: form.querySelector('[name="email"]').value,
           password: form.querySelector('[name="password"]').value,
         };
-        location.href = '/pages/';
+        location.href = '../';
         return;
       }
     });
