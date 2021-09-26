@@ -1405,7 +1405,8 @@ html[data-color='dark-red'],
 html[data-color='dark-pink'],
 html[data-color='dark-purple'] {
   .logo .img {
-    background-image: url(../img/logo/logo-light.svg);
+    background-image: url(../img/affiliates/logo-white.svg);
+    background-position-y: center;
   }
 }
 

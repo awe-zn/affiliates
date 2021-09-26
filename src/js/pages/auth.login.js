@@ -31,8 +31,8 @@ class AuthLogin {
       },
       messages: {
         email: {
-          email: 'Seu endereço de email precisa estar no padrão correto!',
-          required: 'O email é obrigatório!',
+          email: 'Seu endereço de e-mail precisa estar no padrão correto!',
+          required: 'O e-mail é obrigatório!',
         },
         password: {
           required: 'A senha é obrigatória!',

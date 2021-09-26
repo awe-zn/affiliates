@@ -23,7 +23,7 @@ class Icons {
       csLineInterfaceInputId: 'csLineInterfaceIconsSearch',
       bootstrapContainerId: 'bootstrapIconsContainer',
       bootstrapInputId: 'bootstrapIconsSearch',
-      datapath: Helpers.UrlFix('json/icons.json'),
+      datapath: Helpers.UrlFix('../src/json/icons.json'),
     };
   }
 

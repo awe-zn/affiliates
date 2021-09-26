@@ -29,6 +29,7 @@ body {
 
 #root {
   opacity: 0;
+  transition: 0.3s all;
 }
 
 html:not([data-show='true']) body.spinner {
@@ -47,4 +48,12 @@ html[data-show='true'] {
   #root {
     opacity: 1;
   }
+}
+
+.gapy {
+  row-gap: 1rem !important;
+}
+
+.minw-max-content {
+  min-width: max-content !important;
 }
