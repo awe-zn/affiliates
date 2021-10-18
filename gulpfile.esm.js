@@ -82,7 +82,7 @@ task('sync', function (callback) {
       baseDir: './',
     },
     notify: false,
-    startPath: '/pages/auth/login.html',
+    startPath: '/pages/affiliator/auth/login.html',
   });
   callback();
 });

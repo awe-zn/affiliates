@@ -66,6 +66,20 @@ html[data-show='true'] {
   gap: 1rem !important;
 }
 
+.sticky-top-nav {
+  position: sticky;
+  top: 100px;
+}
+
+.pt-nav-scroll {
+  padding-top: 100px !important;
+  margin-top: -52px;
+
+  &:first-child {
+    margin-top: -100px;
+  }
+}
+
 .minw-max-content {
   min-width: max-content !important;
 }
