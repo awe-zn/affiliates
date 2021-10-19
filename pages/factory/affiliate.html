@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>Dashboard</title>
+    <title>Financeiro</title>
     <link
       rel="shortcut icon"
       href="../../src/img/affiliates/favicon.ico"
@@ -43,6 +43,12 @@
     <link rel="stylesheet" href="../../src/css/styles.css" />
 
     <link rel="stylesheet" href="../../src/css/main.css" />
+
+    <style>
+      table td {
+        vertical-align: middle;
+      }
+    </style>
     <script src="../../src/js/base/loader.js"></script>
   </head>
 
@@ -137,6 +143,12 @@
               </li>
               <li>
                 <a href="./affiliate.html">
+                  <i data-cs-icon="shop" class="icon" data-cs-size="18"></i>
+                  <span class="label">Lojas</span>
+                </a>
+              </li>
+              <li>
+                <a href="./affiliate.html">
                   <i class="me-2 icon-18 bi-people"></i>
                   <span class="label">Afiliados</span>
                 </a>
@@ -172,7 +184,7 @@
           <div class="page-title-container">
             <div class="row">
               <div class="col">
-                <h1 class="mb-0 pb-0 display-4" id="title">Home</h1>
+                <h1 class="mb-0 pb-0 display-4" id="title">Afiliados</h1>
                 <nav
                   class="breadcrumb-container d-inline-block"
                   aria-label="breadcrumb"
@@ -182,82 +194,10 @@
                       <span>Affiliates</span>
                     </li>
                     <li class="breadcrumb-item">
-                      <span>Home</span>
+                      <span>Afiliados</span>
                     </li>
                   </ul>
                 </nav>
-              </div>
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-lg-3 gapy mb-3">
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <div
-                    class="heading d-flex justify-content-between lh-1-25 mb-3"
-                  >
-                    <span>Pedidos</span>
-                    <i data-cs-icon="box"></i>
-                  </div>
-                  <div class="row row-cols-2">
-                    <div class="col">
-                      <div class="text-small text-muted mb-1">
-                        ÚLTIMOS 30 DIAS
-                      </div>
-                      <div class="cta-1 text-primary">1.325</div>
-                    </div>
-                    <div class="col">
-                      <div class="text-small text-muted mb-1">HOJE</div>
-                      <div class="cta-1 text-primary">325</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <div
-                    class="heading d-flex justify-content-between lh-1-25 mb-3"
-                  >
-                    <span>Vendas</span>
-                    <i class="icon-20 bi-receipt d-flex"></i>
-                  </div>
-                  <div class="row row-cols-2">
-                    <div class="col">
-                      <div class="text-small text-muted mb-1">
-                        ÚLTIMOS 30 DIAS
-                      </div>
-                      <div class="cta-1 text-primary">R$ 2.325,00</div>
-                    </div>
-                    <div class="col">
-                      <div class="text-small text-muted mb-1">HOJE</div>
-                      <div class="cta-1 text-primary">R$ 325,00</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <div
-                    class="heading d-flex justify-content-between lh-1-25 mb-3"
-                  >
-                    <span>Afiliados</span>
-                    <i class="icon-20 bi-people d-flex"></i>
-                  </div>
-                  <div class="row row-cols-2">
-                    <div class="col">
-                      <div class="text-small text-muted mb-1">QUANTIDADE</div>
-                      <div class="cta-1 text-primary">125</div>
-                    </div>
-                    <div class="col">
-                      <div class="text-small text-muted mb-1">COMISSÕES</div>
-                      <div class="cta-1 text-primary">R$ 325,00</div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -265,20 +205,33 @@
             <div class="col">
               <div class="card mb-2">
                 <div class="card-header">
-                  <h5 class="card-title m-0">Últimos pedidos com afiliados</h5>
+                  <div
+                    class="d-flex flex-row flex-wrap align-items-center gap-3"
+                  >
+                    <h5 class="card-title m-0">Afiliados cadastrados</h5>
+
+                    <div class="d-flex gap-2 flex-row flex-wrap ms-auto">
+                      <button
+                        type="button"
+                        class="btn btn-tertiary flex-grow-1"
+                      >
+                        Adicionar afiliação
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="card-body">
-                  <div class="row gy-3">
+                  <div class="row gapy">
                     <div class="col-12">
-                      <div class="row gy-2">
+                      <div class="row gapy-2">
                         <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="id" class="form-label w-100">
+                          <label for="name" class="form-label w-100">
                             Filtrar por afiliado
                           </label>
                           <input
                             class="form-control"
-                            placeholder="ID"
-                            id="id"
+                            placeholder="Nome"
+                            id="name"
                           />
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
@@ -286,14 +239,6 @@
                             Data de criação
                           </label>
                           <input class="form-control" type="date" id="date" />
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="status" class="form-label w-100">
-                            Status
-                          </label>
-                          <select class="form-select" id="status">
-                            <option>Cancelado</option>
-                          </select>
                         </div>
                         <div class="col-auto">
                           <div class="d-flex align-items-end h-100">
@@ -305,101 +250,141 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <div class="d-flex flex-column gap-3">
-                        <div class="table-responsive">
-                          <table class="table minw-max-content m-0">
-                            <thead>
-                              <tr>
-                                <th scope="col">ID VTEX</th>
-                                <th scope="col">Criado em</th>
-                                <th scope="col">Cliente</th>
-                                <th scope="col">Valor total</th>
-                                <th scope="col">Afiliado</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>JOAO2020</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>JOAO2020</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>JOAO2020</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>JOAO2020</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                                <td>JOAO2020</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div class="d-flex mt-3">
-                          <a
-                            href="./orders.html"
-                            class="btn btn-primary ms-auto"
-                          >
-                            VER TODOS
-                          </a>
-                        </div>
+                      <div class="table-responsive">
+                        <table class="table minw-max-content m-0">
+                          <thead>
+                            <tr>
+                              <th scope="col">Nome</th>
+                              <th scope="col">E-mail</th>
+                              <th scope="col">Telefone</th>
+                              <th scope="col">Empresa</th>
+                              <th scope="col">Ações</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Sidinaldo Programador</td>
+                              <td>
+                                <a href="mailto:jalmeidacn@gmail.com">
+                                  jalmeidacn@gmail.com
+                                </a>
+                              </td>
+                              <td>84555666666</td>
+                              <td>Dev SA</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Sidinaldo Programador</td>
+                              <td>
+                                <a href="mailto:jalmeidacn@gmail.com">
+                                  jalmeidacn@gmail.com
+                                </a>
+                              </td>
+                              <td>84555666666</td>
+                              <td>Dev SA</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Sidinaldo Programador</td>
+                              <td>
+                                <a href="mailto:jalmeidacn@gmail.com">
+                                  jalmeidacn@gmail.com
+                                </a>
+                              </td>
+                              <td>84555666666</td>
+                              <td>Dev SA</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Sidinaldo Programador</td>
+                              <td>
+                                <a href="mailto:jalmeidacn@gmail.com">
+                                  jalmeidacn@gmail.com
+                                </a>
+                              </td>
+                              <td>84555666666</td>
+                              <td>Dev SA</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Sidinaldo Programador</td>
+                              <td>
+                                <a href="mailto:jalmeidacn@gmail.com">
+                                  jalmeidacn@gmail.com
+                                </a>
+                              </td>
+                              <td>84555666666</td>
+                              <td>Dev SA</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
+                    </div>
+                    <div class="col-12">
+                      <ul class="pagination m-0">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="First">
+                            <i
+                              data-cs-icon="arrow-double-left"
+                              data-cs-size="20"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <i
+                              data-cs-icon="chevron-left"
+                              data-cs-size="20"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <i
+                              data-cs-icon="chevron-right"
+                              data-cs-size="20"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Last">
+                            <i
+                              data-cs-icon="arrow-double-right"
+                              data-cs-size="20"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>

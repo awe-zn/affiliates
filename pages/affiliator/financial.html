@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>Pedidos</title>
+    <title>Financeiro</title>
     <link
       rel="shortcut icon"
       href="../../src/img/affiliates/favicon.ico"
@@ -178,7 +178,7 @@
           <div class="page-title-container">
             <div class="row">
               <div class="col">
-                <h1 class="mb-0 pb-0 display-4" id="title">Pedidos VTEX</h1>
+                <h1 class="mb-0 pb-0 display-4" id="title">Financeiro</h1>
                 <nav
                   class="breadcrumb-container d-inline-block"
                   aria-label="breadcrumb"
@@ -188,7 +188,7 @@
                       <span>Affiliates</span>
                     </li>
                     <li class="breadcrumb-item">
-                      <span>Pedidos VTEX</span>
+                      <span>Financeiro</span>
                     </li>
                   </ul>
                 </nav>
@@ -202,7 +202,7 @@
                   <div
                     class="d-flex flex-row flex-wrap align-items-center gap-3"
                   >
-                    <h5 class="card-title m-0">Lista de pedidos</h5>
+                    <h5 class="card-title m-0">Financeiro</h5>
 
                     <div class="d-flex gap-2 flex-row flex-wrap ms-auto">
                       <button
@@ -231,20 +231,6 @@
                             id="id"
                           />
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="date" class="form-label w-100">
-                            Data de criação
-                          </label>
-                          <input class="form-control" type="date" id="date" />
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="status" class="form-label w-100">
-                            Status
-                          </label>
-                          <select class="form-select" id="status">
-                            <option>Cancelado</option>
-                          </select>
-                        </div>
                         <div class="col-auto">
                           <div class="d-flex align-items-end h-100">
                             <button class="btn btn-primary" type="submit">
@@ -259,60 +245,155 @@
                         <table class="table minw-max-content m-0">
                           <thead>
                             <tr>
+                              <th scope="col">ID</th>
                               <th scope="col">ID VTEX</th>
-                              <th scope="col">Criado em</th>
-                              <th scope="col">Cliente</th>
-                              <th scope="col">Valor total</th>
-                              <th scope="col">Comissão</th>
                               <th scope="col">Afiliado</th>
-                              <th scope="col">Status</th>
+                              <th scope="col">Valor total</th>
+                              <th scope="col">Pago</th>
+                              <th scope="col">Comprovante</th>
+                              <th scope="col">Ações</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>4</td>
+                              <td scope="row">1051080676428-01</td>
+                              <td>
+                                <div class="d-flex flex-row gapx gapx-2">
+                                  0002
+                                  <a
+                                    href="#modal-affiliate"
+                                    data-bs-toggle="modal"
+                                    class="d-flex"
+                                    title="Ver dados bancários"
+                                  >
+                                    <i
+                                      data-cs-icon="eye"
+                                      class="text-primary"
+                                    ></i>
+                                  </a>
+                                </div>
+                              </td>
+                              <td>R$ 5.50</td>
+                              <td>Não</td>
+                              <td>-</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Pagar
+                                </button>
+                              </td>
                             </tr>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>4</td>
+                              <td scope="row">1051080676428-01</td>
+                              <td>
+                                <div class="d-flex flex-row gapx gapx-2">
+                                  0002
+                                  <a
+                                    href="#modal-affiliate"
+                                    data-bs-toggle="modal"
+                                    class="d-flex"
+                                    title="Ver dados bancários"
+                                  >
+                                    <i
+                                      data-cs-icon="eye"
+                                      class="text-primary"
+                                    ></i>
+                                  </a>
+                                </div>
+                              </td>
+                              <td>R$ 5.50</td>
+                              <td>Não</td>
+                              <td>-</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Pagar
+                                </button>
+                              </td>
                             </tr>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>4</td>
+                              <td scope="row">1051080676428-01</td>
+                              <td>
+                                <div class="d-flex flex-row gapx gapx-2">
+                                  0002
+                                  <a
+                                    href="#modal-affiliate"
+                                    data-bs-toggle="modal"
+                                    class="d-flex"
+                                    title="Ver dados bancários"
+                                  >
+                                    <i
+                                      data-cs-icon="eye"
+                                      class="text-primary"
+                                    ></i>
+                                  </a>
+                                </div>
+                              </td>
+                              <td>R$ 5.50</td>
+                              <td>Não</td>
+                              <td>-</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Pagar
+                                </button>
+                              </td>
                             </tr>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>4</td>
+                              <td scope="row">1051080676428-01</td>
+                              <td>
+                                <div class="d-flex flex-row gapx gapx-2">
+                                  0002
+                                  <a
+                                    href="#modal-affiliate"
+                                    data-bs-toggle="modal"
+                                    class="d-flex"
+                                    title="Ver dados bancários"
+                                  >
+                                    <i
+                                      data-cs-icon="eye"
+                                      class="text-primary"
+                                    ></i>
+                                  </a>
+                                </div>
+                              </td>
+                              <td>R$ 5.50</td>
+                              <td>Não</td>
+                              <td>-</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Pagar
+                                </button>
+                              </td>
                             </tr>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>4</td>
+                              <td scope="row">1051080676428-01</td>
+                              <td>
+                                <div class="d-flex flex-row gapx gapx-2">
+                                  0002
+                                  <a
+                                    href="#modal-affiliate"
+                                    data-bs-toggle="modal"
+                                    class="d-flex"
+                                    title="Ver dados bancários"
+                                  >
+                                    <i
+                                      data-cs-icon="eye"
+                                      class="text-primary"
+                                    ></i>
+                                  </a>
+                                </div>
+                              </td>
+                              <td>R$ 5.50</td>
+                              <td>Não</td>
+                              <td>-</td>
+                              <td>
+                                <button type="button" class="btn btn-muted">
+                                  Pagar
+                                </button>
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -389,6 +470,59 @@
     <script>
       const datapath = '../../src/json/icons.json';
     </script>
+
+    <div class="modal fade modal-close-out" id="modal-affiliate">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Dados bancários</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column gapy-2">
+              <div class="title">
+                Banco:
+                <strong>Caixa</strong>
+              </div>
+              <div class="title">
+                Agência:
+                <strong>12359</strong>
+              </div>
+              <div class="title">
+                Tipo de Conta:
+                <strong>Corrente</strong>
+              </div>
+              <div class="title">
+                Conta:
+                <strong>78798</strong>
+              </div>
+              <div class="title">
+                CPF/CNPJ:
+                <strong>023.524.531-09</strong>
+              </div>
+              <div class="title">
+                PIX:
+                <strong>023.524.531-09</strong>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary m-0"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="../../src/js/vendor/jquery-3.5.1.min.js"></script>
     <script src="../../src/js/vendor/bootstrap.bundle.min.js"></script>

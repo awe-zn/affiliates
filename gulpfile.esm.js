@@ -94,7 +94,7 @@ task('watch', function (callback) {
   watch('src/json/**/*', series('reload'));
   watch('src/font/**/*', series('reload'));
   watch('src/img/**/*', series('reload'));
-  watch('pages/*.html', series('reload'));
+  watch('pages/**/*.html', series('reload'));
   callback();
 });
 

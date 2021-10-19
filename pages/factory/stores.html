@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>Pedidos</title>
+    <title>Lojas</title>
     <link
       rel="shortcut icon"
       href="../../src/img/affiliates/favicon.ico"
@@ -143,6 +143,12 @@
               </li>
               <li>
                 <a href="./affiliate.html">
+                  <i data-cs-icon="shop" class="icon" data-cs-size="18"></i>
+                  <span class="label">Lojas</span>
+                </a>
+              </li>
+              <li>
+                <a href="./affiliate.html">
                   <i class="me-2 icon-18 bi-people"></i>
                   <span class="label">Afiliados</span>
                 </a>
@@ -178,7 +184,7 @@
           <div class="page-title-container">
             <div class="row">
               <div class="col">
-                <h1 class="mb-0 pb-0 display-4" id="title">Pedidos VTEX</h1>
+                <h1 class="mb-0 pb-0 display-4" id="title">Lojas</h1>
                 <nav
                   class="breadcrumb-container d-inline-block"
                   aria-label="breadcrumb"
@@ -188,7 +194,7 @@
                       <span>Affiliates</span>
                     </li>
                     <li class="breadcrumb-item">
-                      <span>Pedidos VTEX</span>
+                      <span>Lojas</span>
                     </li>
                   </ul>
                 </nav>
@@ -202,7 +208,7 @@
                   <div
                     class="d-flex flex-row flex-wrap align-items-center gap-3"
                   >
-                    <h5 class="card-title m-0">Lista de pedidos</h5>
+                    <h5 class="card-title m-0">Lojas</h5>
 
                     <div class="d-flex gap-2 flex-row flex-wrap ms-auto">
                       <button
@@ -217,154 +223,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-body">
-                  <div class="row gapy">
-                    <div class="col-12">
-                      <div class="row gapy-2">
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="id" class="form-label w-100">
-                            Filtrar por afiliado
-                          </label>
-                          <input
-                            class="form-control"
-                            placeholder="ID"
-                            id="id"
-                          />
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="date" class="form-label w-100">
-                            Data de criação
-                          </label>
-                          <input class="form-control" type="date" id="date" />
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="status" class="form-label w-100">
-                            Status
-                          </label>
-                          <select class="form-select" id="status">
-                            <option>Cancelado</option>
-                          </select>
-                        </div>
-                        <div class="col-auto">
-                          <div class="d-flex align-items-end h-100">
-                            <button class="btn btn-primary" type="submit">
-                              Filtrar
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="table-responsive">
-                        <table class="table minw-max-content m-0">
-                          <thead>
-                            <tr>
-                              <th scope="col">ID VTEX</th>
-                              <th scope="col">Criado em</th>
-                              <th scope="col">Cliente</th>
-                              <th scope="col">Valor total</th>
-                              <th scope="col">Comissão</th>
-                              <th scope="col">Afiliado</th>
-                              <th scope="col">Status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <ul class="pagination m-0">
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="First">
-                            <i
-                              data-cs-icon="arrow-double-left"
-                              data-cs-size="20"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Previous">
-                            <i
-                              data-cs-icon="chevron-left"
-                              data-cs-size="20"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Next">
-                            <i
-                              data-cs-icon="chevron-right"
-                              data-cs-size="20"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Last">
-                            <i
-                              data-cs-icon="arrow-double-right"
-                              data-cs-size="20"
-                            ></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                <div class="card-body">Lojas!</div>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>Pedidos</title>
+    <title>Link</title>
     <link
       rel="shortcut icon"
       href="../../src/img/affiliates/favicon.ico"
@@ -120,12 +120,6 @@
                 </a>
               </li>
               <li>
-                <a href="./commissions/">
-                  <i data-cs-icon="suitcase" class="icon" data-cs-size="18"></i>
-                  <span class="label">Comissões</span>
-                </a>
-              </li>
-              <li>
                 <a href="./orders.html">
                   <i
                     data-cs-icon="notebook-1"
@@ -142,9 +136,9 @@
                 </a>
               </li>
               <li>
-                <a href="./affiliate.html">
-                  <i class="me-2 icon-18 bi-people"></i>
-                  <span class="label">Afiliados</span>
+                <a href="./link.html">
+                  <i data-cs-icon="link" class="icon" data-cs-size="18"></i>
+                  <span class="label">Link</span>
                 </a>
               </li>
             </ul>
@@ -178,7 +172,9 @@
           <div class="page-title-container">
             <div class="row">
               <div class="col">
-                <h1 class="mb-0 pb-0 display-4" id="title">Pedidos VTEX</h1>
+                <h1 class="mb-0 pb-0 display-4" id="title">
+                  Link de afiliação
+                </h1>
                 <nav
                   class="breadcrumb-container d-inline-block"
                   aria-label="breadcrumb"
@@ -188,7 +184,7 @@
                       <span>Affiliates</span>
                     </li>
                     <li class="breadcrumb-item">
-                      <span>Pedidos VTEX</span>
+                      <span>Link de afiliação</span>
                     </li>
                   </ul>
                 </nav>
@@ -202,7 +198,7 @@
                   <div
                     class="d-flex flex-row flex-wrap align-items-center gap-3"
                   >
-                    <h5 class="card-title m-0">Lista de pedidos</h5>
+                    <h5 class="card-title m-0">URL gerada pra campanha</h5>
 
                     <div class="d-flex gap-2 flex-row flex-wrap ms-auto">
                       <button
@@ -218,150 +214,34 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="row gapy">
-                    <div class="col-12">
-                      <div class="row gapy-2">
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="id" class="form-label w-100">
-                            Filtrar por afiliado
-                          </label>
-                          <input
-                            class="form-control"
-                            placeholder="ID"
-                            id="id"
-                          />
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="date" class="form-label w-100">
-                            Data de criação
-                          </label>
-                          <input class="form-control" type="date" id="date" />
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="status" class="form-label w-100">
-                            Status
-                          </label>
-                          <select class="form-select" id="status">
-                            <option>Cancelado</option>
-                          </select>
-                        </div>
-                        <div class="col-auto">
-                          <div class="d-flex align-items-end h-100">
-                            <button class="btn btn-primary" type="submit">
-                              Filtrar
-                            </button>
-                          </div>
-                        </div>
+                  <div class="row">
+                    <div class="d-flex flex-column gapy">
+                      <div>
+                        <label class="form-label">
+                          Insira a URL de um produto da loja ou use o link
+                          abaixo.
+                        </label>
+                        <input type="text" class="form-control" />
                       </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="table-responsive">
-                        <table class="table minw-max-content m-0">
-                          <thead>
-                            <tr>
-                              <th scope="col">ID VTEX</th>
-                              <th scope="col">Criado em</th>
-                              <th scope="col">Cliente</th>
-                              <th scope="col">Valor total</th>
-                              <th scope="col">Comissão</th>
-                              <th scope="col">Afiliado</th>
-                              <th scope="col">Status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
-                              <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div>
+                        <label class="form-label">
+                          Use essa URL em qualquer canal promocional que você
+                          queira associado nesta afiliação.
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="https://agenciametodo.myvtex.com?utm_campaing=8b611543-5b1f-4e1c-93a0-16bdb5b57960&utm_source=8b611543-5b1f-4e1c-93a0-16bdb5b57960"
+                          readonly
+                        />
                       </div>
-                    </div>
-                    <div class="col-12">
-                      <ul class="pagination m-0">
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="First">
-                            <i
-                              data-cs-icon="arrow-double-left"
-                              data-cs-size="20"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Previous">
-                            <i
-                              data-cs-icon="chevron-left"
-                              data-cs-size="20"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Next">
-                            <i
-                              data-cs-icon="chevron-right"
-                              data-cs-size="20"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Last">
-                            <i
-                              data-cs-icon="arrow-double-right"
-                              data-cs-size="20"
-                            ></i>
-                          </a>
-                        </li>
-                      </ul>
+                      <div>
+                        <label class="form-label">Encurtar URL</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <button type="button" class="btn btn-dark ms-auto">
+                        COPIAR URL
+                      </button>
                     </div>
                   </div>
                 </div>

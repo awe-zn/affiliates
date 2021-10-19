@@ -114,12 +114,6 @@
                 </a>
               </li>
               <li>
-                <a href="./commissions/">
-                  <i data-cs-icon="suitcase" class="icon" data-cs-size="18"></i>
-                  <span class="label">Comissões</span>
-                </a>
-              </li>
-              <li>
                 <a href="./orders.html">
                   <i
                     data-cs-icon="notebook-1"
@@ -136,9 +130,9 @@
                 </a>
               </li>
               <li>
-                <a href="./affiliate.html">
-                  <i class="me-2 icon-18 bi-people"></i>
-                  <span class="label">Afiliados</span>
+                <a href="./link.html">
+                  <i data-cs-icon="link" class="icon" data-cs-size="18"></i>
+                  <span class="label">Link</span>
                 </a>
               </li>
             </ul>
@@ -206,26 +200,29 @@
                             <i data-cs-icon="user" class="me-1"></i>
                             Minha Conta
                           </a>
-                          <a class="nav-link d-flex" href="#enterprise">
-                            <i data-cs-icon="building" class="me-1"></i>
-                            Dados da Empresa
-                          </a>
-                          <a class="nav-link d-flex" href="#financial">
-                            <i data-cs-icon="box" class="me-1"></i>
-                            Financeiro
-                          </a>
-                          <a class="nav-link d-flex" href="#integration">
-                            <i data-cs-icon="puzzle" class="me-1"></i>
-                            Integração VTEX
-                          </a>
                         </ul>
                       </div>
                     </div>
                     <div class="col-md">
-                      <div class="d-flex flex-column">
+                      <div class="d-flex flex-column gapy-2">
                         <div id="profile" class="pt-nav-scroll">
                           <h4 class="card-title mb-4">Minha conta</h4>
                           <div class="d-flex flex-column gapy">
+                            <div>
+                              <label class="form-label">
+                                Código de afiliado
+                              </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                value="8b611543-5b1f-4e1c-93a0-16bdb5b57960"
+                                disabled
+                              />
+                              <small class="text-muted">
+                                Afiliador:
+                                <strong>Agência Método</strong>
+                              </small>
+                            </div>
                             <div>
                               <label class="form-label">Chave de API</label>
                               <input
@@ -240,12 +237,16 @@
                               <input
                                 type="text"
                                 class="form-control"
-                                value="Agência Método"
+                                value="João "
                               />
                             </div>
                             <div>
                               <label class="form-label">Sobrenome</label>
-                              <input type="text" class="form-control" />
+                              <input
+                                type="text"
+                                class="form-control"
+                                value="Félix"
+                              />
                             </div>
                             <div class="d-flex flex-row flex-row gap">
                               <div class="flex-grow-1">
@@ -267,181 +268,12 @@
                             </div>
                           </div>
                         </div>
-                        <div id="enterprise" class="pt-nav-scroll">
-                          <h4 class="card-title mb-4">Dados da Empresa</h4>
-                          <div class="d-flex flex-column gapy">
-                            <div>
-                              <label class="form-label">Nome Fantasia</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="Agência Método"
-                              />
-                            </div>
-                            <div>
-                              <label class="form-label">Razão Social</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="Empresa de Teste LTDA"
-                              />
-                            </div>
-                            <div>
-                              <label class="form-label">CNPJ</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="01.344.305/0001-83"
-                              />
-                            </div>
-                            <div>
-                              <label class="form-label">Telefone</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="84996041635"
-                              />
-                            </div>
-                            <div class="d-flex flex-row flex-row gap">
-                              <div class="flex-grow-1">
-                                <label class="form-label">Endereço</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="Rua das Flores, 51"
-                                />
-                              </div>
-                              <div class="flex-grow-1">
-                                <label class="form-label">Complemento</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="Nada"
-                                />
-                              </div>
-                            </div>
-                            <div class="d-flex flex-row flex-row gap">
-                              <div class="flex-grow-1">
-                                <label class="form-label">CEP</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="59052-700"
-                                />
-                              </div>
-                              <div class="flex-grow-1">
-                                <label class="form-label">Cidade</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="Natal"
-                                />
-                              </div>
-                            </div>
-                            <div class="d-flex flex-row flex-row gap">
-                              <div class="flex-grow-1">
-                                <label class="form-label">Estado</label>
-                                <select class="form-select">
-                                  <option>Natal</option>
-                                </select>
-                              </div>
-                              <div class="flex-grow-1">
-                                <label class="form-label">País</label>
-                                <input
-                                  type="text"
-                                  class="form-select"
-                                  value="Natal"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div id="financial" class="pt-nav-scroll">
-                          <h4 class="card-title mb-4">Financeiro</h4>
-                          <div class="d-flex flex-column gapy">
-                            <div class="d-flex flex-row flex-row gap">
-                              <div class="flex-grow-1">
-                                <label class="form-label">
-                                  Dia de faturamento
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="10"
-                                />
-                              </div>
-                              <div class="flex-grow-1">
-                                <label class="form-label">
-                                  Dias para comissão
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="12"
-                                />
-                              </div>
-                            </div>
-                            <div>
-                              <label class="form-label">
-                                Mínimo para saque
-                              </label>
-                              <div class="input-group">
-                                <div class="input-group-text">R$</div>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="500"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div id="integration" class="pt-nav-scroll">
-                          <h4 class="card-title mb-4">Integração</h4>
-                          <div class="d-flex flex-column gapy">
-                            <div>
-                              <label class="form-label">Link da sua Loja</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="https://agenciametodo.myvtex.com"
-                              />
-                            </div>
-                            <div>
-                              <label class="form-label">
-                                Nome da conta
-                                <i>(account name)</i>
-                              </label>
-                              <div class="input-group">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="agenciametodo"
-                                />
-                                <div class="input-group-text">.myvtex.com</div>
-                              </div>
-                            </div>
-                            <div>
-                              <label class="form-label">
-                                Chave
-                                <i>(app key)</i>
-                              </label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="vtexappkey-agenciametodo-EPFZQJ"
-                              />
-                            </div>
-                            <div>
-                              <label class="form-label">Token</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="EZWVFIJMPTROPUZQWFAXTZUQIDPJSZIBZWSFFYRIVXWDAXOWIXTEDBXEEGMBSZUQLQOSBUKYORCWDQPLOTBVGEYYZOAZLPPVDGSKIWUNMUQLYABNQAMZXYJHSQTNUKNY"
-                              />
-                            </div>
-                          </div>
-                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-quaternary ms-auto"
+                        >
+                          SALVAR
+                        </button>
                       </div>
                     </div>
                   </div>
