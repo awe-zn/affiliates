@@ -48,6 +48,9 @@
       table td {
         vertical-align: middle;
       }
+      table :is(td, th):is(:last-child) {
+        width: 150px;
+      }
     </style>
     <script src="../../src/js/base/loader.js"></script>
   </head>
@@ -102,7 +105,7 @@
                           class="me-2"
                           data-cs-size="17"
                         ></i>
-                        <span class="align-middle">Logout</span>
+                        <span class="align-middle">Sair</span>
                       </a>
                     </li>
                   </ul>
@@ -214,6 +217,8 @@
                       <button
                         type="button"
                         class="btn btn-tertiary flex-grow-1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-details"
                       >
                         Adicionar afiliação
                       </button>
@@ -240,6 +245,26 @@
                           </label>
                           <input class="form-control" type="date" id="date" />
                         </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                          <label for="email" class="form-label w-100">
+                            Filtrar por email
+                          </label>
+                          <input
+                            class="form-control"
+                            placeholder="Nome"
+                            id="email"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                          <label for="store" class="form-label w-100">
+                            Filtrar por loja
+                          </label>
+                          <input
+                            class="form-control"
+                            placeholder="Nome"
+                            id="store"
+                          />
+                        </div>
                         <div class="col-auto">
                           <div class="d-flex align-items-end h-100">
                             <button class="btn btn-primary" type="submit">
@@ -257,7 +282,7 @@
                               <th scope="col">Nome</th>
                               <th scope="col">E-mail</th>
                               <th scope="col">Telefone</th>
-                              <th scope="col">Empresa</th>
+                              <th scope="col">Loja</th>
                               <th scope="col">Ações</th>
                             </tr>
                           </thead>
@@ -272,7 +297,12 @@
                               <td>84555666666</td>
                               <td>Dev SA</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-target="#modal-details"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-muted"
+                                >
                                   Ver detalhes
                                 </button>
                               </td>
@@ -287,7 +317,12 @@
                               <td>84555666666</td>
                               <td>Dev SA</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-target="#modal-details"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-muted"
+                                >
                                   Ver detalhes
                                 </button>
                               </td>
@@ -302,7 +337,12 @@
                               <td>84555666666</td>
                               <td>Dev SA</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-target="#modal-details"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-muted"
+                                >
                                   Ver detalhes
                                 </button>
                               </td>
@@ -317,7 +357,12 @@
                               <td>84555666666</td>
                               <td>Dev SA</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-target="#modal-details"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-muted"
+                                >
                                   Ver detalhes
                                 </button>
                               </td>
@@ -332,7 +377,12 @@
                               <td>84555666666</td>
                               <td>Dev SA</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-target="#modal-details"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-muted"
+                                >
                                   Ver detalhes
                                 </button>
                               </td>
@@ -407,6 +457,91 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <div class="modal fade modal-close-out" id="modal-details">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Alterar afiliado:
+              <strong>Sidinaldo Programador</strong>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column gapy-2">
+              <div>
+                <label class="form-label" for="code">Código</label>
+                <input type="text" class="form-control" id="code" />
+              </div>
+              <div>
+                <label class="form-label" for="fullname">Nome completo:</label>
+                <input type="text" class="form-control" id="fullname" />
+              </div>
+              <div>
+                <label class="form-label" for="user-email">E-mail:</label>
+                <input type="email" class="form-control" id="user-email" />
+              </div>
+              <div>
+                <label class="form-label" for="phone">Telefone:</label>
+                <input type="text" class="form-control" id="phone" />
+              </div>
+              <div>
+                <label class="form-label" for="business">Empresa:</label>
+                <input type="text" class="form-control" id="business" />
+              </div>
+              <div>
+                <label class="form-label" for="store">Loja ou região:</label>
+                <input type="text" class="form-control" id="store" />
+              </div>
+              <div>
+                <label class="form-label" for="bank">Banco:</label>
+                <input type="text" class="form-control" id="bank" />
+              </div>
+              <div>
+                <label class="form-label" for="agency">
+                  Agência de pagamento:
+                </label>
+                <input type="text" class="form-control" id="agency" />
+              </div>
+              <div>
+                <label class="form-label" for="account">
+                  Conta de pagamento:
+                </label>
+                <input type="text" class="form-control" id="account" />
+              </div>
+              <div>
+                <label class="form-label" for="account-type">
+                  Tipo de conta de pagamento:
+                </label>
+                <select id="account-type" class="form-control">
+                  <option>Corrente</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label" for="user-cpf">CPF:</label>
+                <input type="text" class="form-control" id="user-cpf" />
+              </div>
+              <div>
+                <label class="form-label" for="pix-key">Pix:</label>
+                <input type="text" class="form-control" id="pix-key" />
+              </div>
+              <div class="d-flex flex-row flex-wrap justify-content-end gap-2">
+                <button class="btn btn-light" data-bs-dismiss="modal">
+                  CANCELAR
+                </button>
+                <button class="btn btn-quaternary">SALVAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>

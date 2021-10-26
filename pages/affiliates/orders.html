@@ -102,7 +102,7 @@
                           class="me-2"
                           data-cs-size="17"
                         ></i>
-                        <span class="align-middle">Logout</span>
+                        <span class="align-middle">Sair</span>
                       </a>
                     </li>
                   </ul>
@@ -117,6 +117,12 @@
                 <a href="./">
                   <i data-cs-icon="board-2" class="icon" data-cs-size="18"></i>
                   <span class="label">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="./commissions/">
+                  <i data-cs-icon="suitcase" class="icon" data-cs-size="18"></i>
+                  <span class="label">Comissões</span>
                 </a>
               </li>
               <li>
@@ -136,9 +142,15 @@
                 </a>
               </li>
               <li>
-                <a href="./link.html">
-                  <i data-cs-icon="link" class="icon" data-cs-size="18"></i>
-                  <span class="label">Link</span>
+                <a href="./affiliate.html">
+                  <i data-cs-icon="shop" class="icon" data-cs-size="18"></i>
+                  <span class="label">Lojas</span>
+                </a>
+              </li>
+              <li>
+                <a href="./affiliate.html">
+                  <i class="me-2 icon-18 bi-people"></i>
+                  <span class="label">Afiliados</span>
                 </a>
               </li>
             </ul>
@@ -205,9 +217,6 @@
                       >
                         Atualizar
                       </button>
-                      <button type="button" class="btn btn-warning flex-grow-1">
-                        Mostrar todos
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -230,6 +239,16 @@
                             Data de criação
                           </label>
                           <input class="form-control" type="date" id="date" />
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                          <label for="store" class="form-label w-100">
+                            Filtrar por loja
+                          </label>
+                          <input
+                            class="form-control"
+                            placeholder="Nome da Loja"
+                            id="store"
+                          />
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
                           <label for="status" class="form-label w-100">
@@ -257,56 +276,74 @@
                               <th scope="col">Criado em</th>
                               <th scope="col">Cliente</th>
                               <th scope="col">Valor total</th>
-                              <th scope="col">Comissão</th>
-                              <th scope="col">Afiliado</th>
+                              <th scope="col">Valor Comissão</th>
                               <th scope="col">Status</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
+                              <th scope="row">1018612519374-01</th>
+                              <td>18/3/20</td>
                               <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>R$ 2,920.00</td>
+                              <td>R$ 150.00</td>
+                              <td>Enviado</td>
                             </tr>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
+                              <th scope="row">1018612519374-01</th>
+                              <td>18/3/20</td>
                               <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>R$ 2,920.00</td>
+                              <td>R$ 150.00</td>
+                              <td>Enviado</td>
                             </tr>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
+                              <th scope="row">1018612519374-01</th>
+                              <td>18/3/20</td>
                               <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>R$ 2,920.00</td>
+                              <td>R$ 150.00</td>
+                              <td>Enviado</td>
                             </tr>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
+                              <th scope="row">1018612519374-01</th>
+                              <td>18/3/20</td>
                               <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>R$ 2,920.00</td>
+                              <td>R$ 150.00</td>
+                              <td>Enviado</td>
                             </tr>
                             <tr>
-                              <td scope="row">1051080704898-01</td>
-                              <td>31/7/20</td>
+                              <th scope="row">1018612519374-01</th>
+                              <td>18/3/20</td>
                               <td>Dante Araujo</td>
-                              <td>R$ 6.00</td>
-                              <td>R$ 0.90</td>
-                              <td>0003</td>
-                              <td>Cancelado</td>
+                              <td>R$ 2,920.00</td>
+                              <td>R$ 150.00</td>
+                              <td>Enviado</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">1018612519374-01</th>
+                              <td>18/3/20</td>
+                              <td>Dante Araujo</td>
+                              <td>R$ 2,920.00</td>
+                              <td>R$ 150.00</td>
+                              <td>Enviado</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">1018612519374-01</th>
+                              <td>18/3/20</td>
+                              <td>Dante Araujo</td>
+                              <td>R$ 2,920.00</td>
+                              <td>R$ 150.00</td>
+                              <td>Enviado</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">1018612519374-01</th>
+                              <td>18/3/20</td>
+                              <td>Dante Araujo</td>
+                              <td>R$ 2,920.00</td>
+                              <td>R$ 150.00</td>
+                              <td>Enviado</td>
                             </tr>
                           </tbody>
                         </table>

@@ -102,7 +102,7 @@
                           class="me-2"
                           data-cs-size="17"
                         ></i>
-                        <span class="align-middle">Logout</span>
+                        <span class="align-middle">Sair</span>
                       </a>
                     </li>
                   </ul>
@@ -189,6 +189,38 @@
               </div>
             </div>
           </div>
+          <div class="row row-cols-1 row-cols-md-2 gapy mb-3">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="heading d-flex justify-content-between lh-1-25 mb-3"
+                  >
+                    <span>Quantidade de venda</span>
+                    <i data-cs-icon="box"></i>
+                  </div>
+                  <div class="cta-2 text-primary text-truncate">
+                    R$ 2.325,00
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="heading d-flex justify-content-between lh-1-25 mb-3"
+                  >
+                    <span>Total de comissões à receber</span>
+                    <i class="icon-20 bi-receipt d-flex"></i>
+                  </div>
+                  <div class="cta-2 text-primary text-truncate">
+                    R$ 2.325,00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col">
               <div class="card mb-2">
@@ -207,6 +239,14 @@
                       </button>
                       <button type="button" class="btn btn-warning flex-grow-1">
                         Mostrar todos
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-tertiary flex-grow-1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#request-payment"
+                      >
+                        Solicitar saque
                       </button>
                     </div>
                   </div>
@@ -239,155 +279,36 @@
                         <table class="table minw-max-content m-0">
                           <thead>
                             <tr>
-                              <th scope="col">ID</th>
-                              <th scope="col">ID VTEX</th>
-                              <th scope="col">Afiliado</th>
-                              <th scope="col">Valor total</th>
-                              <th scope="col">Pago</th>
-                              <th scope="col">Comprovante</th>
-                              <th scope="col">Ações</th>
+                              <th scope="col">Data</th>
+                              <th scope="col">Conteúdo</th>
+                              <th scope="col">Valor</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
-                              <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
-                              <td>
-                                <button type="button" class="btn btn-muted">
-                                  Pagar
-                                </button>
-                              </td>
+                              <td>27/10/2021</td>
+                              <td>Entrada</td>
+                              <td>R$ 5,50</td>
                             </tr>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
-                              <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
-                              <td>
-                                <button type="button" class="btn btn-muted">
-                                  Pagar
-                                </button>
-                              </td>
+                              <td>27/10/2021</td>
+                              <td>Entrada</td>
+                              <td>R$ 5,50</td>
                             </tr>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
-                              <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
-                              <td>
-                                <button type="button" class="btn btn-muted">
-                                  Pagar
-                                </button>
-                              </td>
+                              <td>27/10/2021</td>
+                              <td>Entrada</td>
+                              <td>R$ 5,50</td>
                             </tr>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
-                              <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
-                              <td>
-                                <button type="button" class="btn btn-muted">
-                                  Pagar
-                                </button>
-                              </td>
+                              <td>27/10/2021</td>
+                              <td>Entrada</td>
+                              <td>R$ 5,50</td>
                             </tr>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
-                              <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
-                              <td>
-                                <button type="button" class="btn btn-muted">
-                                  Pagar
-                                </button>
-                              </td>
+                              <td>27/10/2021</td>
+                              <td>Entrada</td>
+                              <td>R$ 5,50</td>
                             </tr>
                           </tbody>
                         </table>
@@ -512,6 +433,35 @@
               data-bs-dismiss="modal"
             >
               Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-close-out" id="request-payment">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Solicitar saque</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="form-label">Comissão</label>
+              <div class="input-group">
+                <span class="input-group-text">R$</span>
+                <input type="text" class="form-control" placeholder="10" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary ms-auto m-0">
+              Solicitar
             </button>
           </div>
         </div>

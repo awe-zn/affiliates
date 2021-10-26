@@ -44,6 +44,12 @@
 
     <link rel="stylesheet" href="../../src/css/main.css" />
     <script src="../../src/js/base/loader.js"></script>
+
+    <style>
+      table :is(td, th):is(:first-child) {
+        width: 176px;
+      }
+    </style>
   </head>
 
   <body>
@@ -96,7 +102,7 @@
                           class="me-2"
                           data-cs-size="17"
                         ></i>
-                        <span class="align-middle">Logout</span>
+                        <span class="align-middle">Sair</span>
                       </a>
                     </li>
                   </ul>
@@ -195,14 +201,16 @@
                   </div>
                   <div class="row row-cols-2">
                     <div class="col">
-                      <div class="text-small text-muted mb-1">
+                      <div class="text-small text-muted mb-1 text-truncate">
                         ÚLTIMOS 30 DIAS
                       </div>
-                      <div class="cta-1 text-primary">1.325</div>
+                      <div class="cta-1 text-primary text-truncate">1.325</div>
                     </div>
                     <div class="col">
-                      <div class="text-small text-muted mb-1">HOJE</div>
-                      <div class="cta-1 text-primary">325</div>
+                      <div class="text-small text-muted mb-1 text-truncate">
+                        HOJE
+                      </div>
+                      <div class="cta-1 text-primary text-truncate">325</div>
                     </div>
                   </div>
                 </div>
@@ -219,14 +227,20 @@
                   </div>
                   <div class="row row-cols-2">
                     <div class="col">
-                      <div class="text-small text-muted mb-1">
+                      <div class="text-small text-muted mb-1 text-truncate">
                         ÚLTIMOS 30 DIAS
                       </div>
-                      <div class="cta-1 text-primary">R$ 2.325,00</div>
+                      <div class="cta-1 text-primary text-truncate">
+                        R$ 2.325,00
+                      </div>
                     </div>
                     <div class="col">
-                      <div class="text-small text-muted mb-1">HOJE</div>
-                      <div class="cta-1 text-primary">R$ 325,00</div>
+                      <div class="text-small text-muted mb-1 text-truncate">
+                        HOJE
+                      </div>
+                      <div class="cta-1 text-primary text-truncate">
+                        R$ 325,00
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -238,17 +252,23 @@
                   <div
                     class="heading d-flex justify-content-between lh-1-25 mb-3"
                   >
-                    <span>Afiliados</span>
+                    <span>Comissões</span>
                     <i class="icon-20 bi-people d-flex"></i>
                   </div>
                   <div class="row row-cols-2">
                     <div class="col">
-                      <div class="text-small text-muted mb-1">QUANTIDADE</div>
-                      <div class="cta-1 text-primary">125</div>
+                      <div class="text-small text-muted mb-1 text-truncate">
+                        QUANTIDADE DE VENDAS
+                      </div>
+                      <div class="cta-1 text-primary text-truncate">125</div>
                     </div>
                     <div class="col">
-                      <div class="text-small text-muted mb-1">COMISSÕES</div>
-                      <div class="cta-1 text-primary">R$ 325,00</div>
+                      <div class="text-small text-muted mb-1 text-truncate">
+                        COMISSÕES A RECEBER
+                      </div>
+                      <div class="cta-1 text-primary text-truncate">
+                        R$ 325,00
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -259,7 +279,7 @@
             <div class="col">
               <div class="card mb-2">
                 <div class="card-header">
-                  <h5 class="card-title m-0">Últimos pedidos com afiliados</h5>
+                  <h5 class="card-title m-0">Seus últimos pedidos</h5>
                 </div>
                 <div class="card-body">
                   <div class="row gy-3">
@@ -308,6 +328,8 @@
                                 <th scope="col">Criado em</th>
                                 <th scope="col">Cliente</th>
                                 <th scope="col">Valor total</th>
+                                <th scope="col">Valor Comissão</th>
+                                <th scope="col">Status</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -316,60 +338,64 @@
                                 <td>18/3/20</td>
                                 <td>Dante Araujo</td>
                                 <td>R$ 2,920.00</td>
+                                <td>R$ 150.00</td>
+                                <td>Enviado</td>
                               </tr>
                               <tr>
                                 <th scope="row">1018612519374-01</th>
                                 <td>18/3/20</td>
                                 <td>Dante Araujo</td>
                                 <td>R$ 2,920.00</td>
+                                <td>R$ 150.00</td>
+                                <td>Enviado</td>
                               </tr>
                               <tr>
                                 <th scope="row">1018612519374-01</th>
                                 <td>18/3/20</td>
                                 <td>Dante Araujo</td>
                                 <td>R$ 2,920.00</td>
+                                <td>R$ 150.00</td>
+                                <td>Enviado</td>
                               </tr>
                               <tr>
                                 <th scope="row">1018612519374-01</th>
                                 <td>18/3/20</td>
                                 <td>Dante Araujo</td>
                                 <td>R$ 2,920.00</td>
+                                <td>R$ 150.00</td>
+                                <td>Enviado</td>
                               </tr>
                               <tr>
                                 <th scope="row">1018612519374-01</th>
                                 <td>18/3/20</td>
                                 <td>Dante Araujo</td>
                                 <td>R$ 2,920.00</td>
+                                <td>R$ 150.00</td>
+                                <td>Enviado</td>
                               </tr>
                               <tr>
                                 <th scope="row">1018612519374-01</th>
                                 <td>18/3/20</td>
                                 <td>Dante Araujo</td>
                                 <td>R$ 2,920.00</td>
+                                <td>R$ 150.00</td>
+                                <td>Enviado</td>
                               </tr>
                               <tr>
                                 <th scope="row">1018612519374-01</th>
                                 <td>18/3/20</td>
                                 <td>Dante Araujo</td>
                                 <td>R$ 2,920.00</td>
+                                <td>R$ 150.00</td>
+                                <td>Enviado</td>
                               </tr>
                               <tr>
                                 <th scope="row">1018612519374-01</th>
                                 <td>18/3/20</td>
                                 <td>Dante Araujo</td>
                                 <td>R$ 2,920.00</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">1018612519374-01</th>
-                                <td>18/3/20</td>
-                                <td>Dante Araujo</td>
-                                <td>R$ 2,920.00</td>
+                                <td>R$ 150.00</td>
+                                <td>Enviado</td>
                               </tr>
                             </tbody>
                           </table>

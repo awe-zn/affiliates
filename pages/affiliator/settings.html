@@ -96,7 +96,7 @@
                           class="me-2"
                           data-cs-size="17"
                         ></i>
-                        <span class="align-middle">Logout</span>
+                        <span class="align-middle">Sair</span>
                       </a>
                     </li>
                   </ul>
@@ -133,6 +133,12 @@
                 <a href="./financial.html">
                   <i data-cs-icon="badge" class="icon" data-cs-size="18"></i>
                   <span class="label">Financeiro</span>
+                </a>
+              </li>
+              <li>
+                <a href="./affiliate.html">
+                  <i data-cs-icon="shop" class="icon" data-cs-size="18"></i>
+                  <span class="label">Lojas</span>
                 </a>
               </li>
               <li>
@@ -304,37 +310,33 @@
                             </div>
                             <div class="d-flex flex-row flex-row gap">
                               <div class="flex-grow-1">
+                                <label class="form-label">CEP</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="zip-code"
+                                />
+                              </div>
+                              <div class="flex-grow-1">
                                 <label class="form-label">Endereço</label>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  value="Rua das Flores, 51"
-                                />
-                              </div>
-                              <div class="flex-grow-1">
-                                <label class="form-label">Complemento</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="Nada"
+                                  id="address"
                                 />
                               </div>
                             </div>
                             <div class="d-flex flex-row flex-row gap">
                               <div class="flex-grow-1">
-                                <label class="form-label">CEP</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="59052-700"
-                                />
+                                <label class="form-label">Complemento</label>
+                                <input type="text" class="form-control" />
                               </div>
                               <div class="flex-grow-1">
                                 <label class="form-label">Cidade</label>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  value="Natal"
+                                  id="city"
                                 />
                               </div>
                             </div>
@@ -469,6 +471,27 @@
 
     <script>
       const datapath = '../../src/json/icons.json';
+
+      const zipCodeEl = document.querySelector('#zip-code');
+      const addressEl = document.querySelector('#address');
+      const cityEl = document.querySelector('#city');
+
+      zipCodeEl.addEventListener('blur', async (e) => {
+        const {
+          target: {value},
+        } = e;
+
+        const zip = value.slice(0, 5) + '-' + value.slice(5);
+        e.target.value = zip;
+
+        const zipFetch = await fetch(
+          `https://ws.apicep.com/cep.json?code=${zip}`,
+        );
+        const data = await zipFetch.json();
+
+        addressEl.value = data.address;
+        cityEl.value = data.city;
+      });
     </script>
 
     <script src="../../src/js/vendor/jquery-3.5.1.min.js"></script>

@@ -49,6 +49,14 @@
         vertical-align: middle;
       }
     </style>
+    <style>
+      table td {
+        vertical-align: middle;
+      }
+      table :is(td, th):is(:last-child) {
+        width: 100px;
+      }
+    </style>
     <script src="../../src/js/base/loader.js"></script>
   </head>
 
@@ -102,7 +110,7 @@
                           class="me-2"
                           data-cs-size="17"
                         ></i>
-                        <span class="align-middle">Logout</span>
+                        <span class="align-middle">Sair</span>
                       </a>
                     </li>
                   </ul>
@@ -139,6 +147,12 @@
                 <a href="./financial.html">
                   <i data-cs-icon="badge" class="icon" data-cs-size="18"></i>
                   <span class="label">Financeiro</span>
+                </a>
+              </li>
+              <li>
+                <a href="./affiliate.html">
+                  <i data-cs-icon="shop" class="icon" data-cs-size="18"></i>
+                  <span class="label">Lojas</span>
                 </a>
               </li>
               <li>
@@ -195,7 +209,39 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row row-cols-1 row-cols-md-2 gapy mb-3">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="heading d-flex justify-content-between lh-1-25 mb-3"
+                  >
+                    <span>Total de vendas</span>
+                    <i data-cs-icon="money"></i>
+                  </div>
+                  <div>
+                    <div class="cta-2 text-primary">R$ 3500,00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="heading d-flex justify-content-between lh-1-25 mb-3"
+                  >
+                    <span>Total de comissões à pagar</span>
+                    <i data-cs-icon="dollar"></i>
+                  </div>
+                  <div>
+                    <div class="cta-2 text-primary">R$ 220,00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
             <div class="col">
               <div class="card mb-2">
                 <div class="card-header">
@@ -222,13 +268,33 @@
                     <div class="col-12">
                       <div class="row gapy-2">
                         <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                          <label for="id" class="form-label w-100">
+                          <label for="affiliate-name" class="form-label w-100">
                             Filtrar por afiliado
                           </label>
                           <input
                             class="form-control"
-                            placeholder="ID"
-                            id="id"
+                            placeholder="Nome do afiliado"
+                            id="affiliate-name"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                          <label for="filter-date-2" class="form-label w-100">
+                            Filtrar por data
+                          </label>
+                          <input
+                            class="form-control"
+                            placeholder="Data"
+                            id="filter-date-2"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                          <label for="filter-value-2" class="form-label w-100">
+                            Filtrar por valor
+                          </label>
+                          <input
+                            class="form-control"
+                            placeholder="Valor"
+                            id="filter-value-2"
                           />
                         </div>
                         <div class="col-auto">
@@ -245,154 +311,296 @@
                         <table class="table minw-max-content m-0">
                           <thead>
                             <tr>
-                              <th scope="col">ID</th>
-                              <th scope="col">ID VTEX</th>
+                              <th scope="col">Data</th>
+                              <th scope="col">Conteúdo</th>
                               <th scope="col">Afiliado</th>
-                              <th scope="col">Valor total</th>
-                              <th scope="col">Pago</th>
-                              <th scope="col">Comprovante</th>
+                              <th scope="col">Valor</th>
                               <th scope="col">Ações</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
+                              <td>26/10/2021</td>
+                              <td>Entrada</td>
+                              <td>Carlos Antonio Garcia Freire</td>
                               <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#make-payment"
+                                  class="btn btn-muted"
+                                >
                                   Pagar
                                 </button>
                               </td>
                             </tr>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
+                              <td>26/10/2021</td>
+                              <td>Saída</td>
+                              <td>Carlos Antonio Garcia Freire</td>
                               <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#make-payment"
+                                  class="btn btn-muted"
+                                >
                                   Pagar
                                 </button>
                               </td>
                             </tr>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
+                              <td>26/10/2021</td>
+                              <td>Entrada</td>
+                              <td>Carlos Antonio Garcia Freire</td>
                               <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#make-payment"
+                                  class="btn btn-muted"
+                                >
                                   Pagar
                                 </button>
                               </td>
                             </tr>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
+                              <td>26/10/2021</td>
+                              <td>Saída</td>
+                              <td>Carlos Antonio Garcia Freire</td>
                               <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#make-payment"
+                                  class="btn btn-muted"
+                                >
                                   Pagar
                                 </button>
                               </td>
                             </tr>
                             <tr>
-                              <td>4</td>
-                              <td scope="row">1051080676428-01</td>
-                              <td>
-                                <div class="d-flex flex-row gapx gapx-2">
-                                  0002
-                                  <a
-                                    href="#modal-affiliate"
-                                    data-bs-toggle="modal"
-                                    class="d-flex"
-                                    title="Ver dados bancários"
-                                  >
-                                    <i
-                                      data-cs-icon="eye"
-                                      class="text-primary"
-                                    ></i>
-                                  </a>
-                                </div>
-                              </td>
+                              <td>26/10/2021</td>
+                              <td>Entrada</td>
+                              <td>Carlos Antonio Garcia Freire</td>
                               <td>R$ 5.50</td>
-                              <td>Não</td>
-                              <td>-</td>
                               <td>
-                                <button type="button" class="btn btn-muted">
+                                <button
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#make-payment"
+                                  class="btn btn-muted"
+                                >
                                   Pagar
                                 </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <ul class="pagination m-0">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="First">
+                            <i
+                              data-cs-icon="arrow-double-left"
+                              data-cs-size="20"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <i
+                              data-cs-icon="chevron-left"
+                              data-cs-size="20"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <i
+                              data-cs-icon="chevron-right"
+                              data-cs-size="20"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Last">
+                            <i
+                              data-cs-icon="arrow-double-right"
+                              data-cs-size="20"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <div class="card mb-2">
+                <div class="card-header">
+                  <div
+                    class="d-flex flex-row flex-wrap align-items-center gap-3"
+                  >
+                    <h5 class="card-title m-0">Extrato de pagamento</h5>
+
+                    <div class="d-flex gap-2 flex-row flex-wrap ms-auto">
+                      <button
+                        type="button"
+                        class="btn btn-quaternary flex-grow-1"
+                      >
+                        Atualizar
+                      </button>
+                      <button type="button" class="btn btn-warning flex-grow-1">
+                        Mostrar todos
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row gapy">
+                    <div class="col-12">
+                      <div class="row gapy-2">
+                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                          <label
+                            for="affiliate-name-2"
+                            class="form-label w-100"
+                          >
+                            Filtrar por afiliado
+                          </label>
+                          <input
+                            class="form-control"
+                            placeholder="ID"
+                            id="affiliate-name-2"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                          <label for="filter-date-2" class="form-label w-100">
+                            Filtrar por data
+                          </label>
+                          <input
+                            class="form-control"
+                            placeholder="Data"
+                            id="filter-date-2"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                          <label for="filter-value-2" class="form-label w-100">
+                            Filtrar por valor
+                          </label>
+                          <input
+                            class="form-control"
+                            placeholder="Valor"
+                            id="filter-value-2"
+                          />
+                        </div>
+                        <div class="col-auto">
+                          <div class="d-flex align-items-end h-100">
+                            <button class="btn btn-primary" type="submit">
+                              Filtrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="table-responsive">
+                        <table class="table minw-max-content m-0">
+                          <thead>
+                            <tr>
+                              <th scope="col">Data</th>
+                              <th scope="col">Afiliado</th>
+                              <th scope="col">Valor total</th>
+                              <th scope="col">Comprovante</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>26/10/2021</td>
+                              <td>Carlos Antonio Garcia Freire</td>
+                              <td>R$ 5.50</td>
+                              <td>
+                                <a
+                                  href="#open-proof"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-info"
+                                >
+                                  Abrir
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>26/10/2021</td>
+                              <td>Carlos Antonio Garcia Freire</td>
+                              <td>R$ 5.50</td>
+                              <td>
+                                <a
+                                  href="#open-proof"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-info"
+                                >
+                                  Abrir
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>26/10/2021</td>
+                              <td>Carlos Antonio Garcia Freire</td>
+                              <td>R$ 5.50</td>
+                              <td>
+                                <a
+                                  href="#open-proof"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-info"
+                                >
+                                  Abrir
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>26/10/2021</td>
+                              <td>Carlos Antonio Garcia Freire</td>
+                              <td>R$ 5.50</td>
+                              <td>
+                                <a
+                                  href="#open-proof"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-info"
+                                >
+                                  Abrir
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>26/10/2021</td>
+                              <td>Carlos Antonio Garcia Freire</td>
+                              <td>R$ 5.50</td>
+                              <td>
+                                <a
+                                  href="#open-proof"
+                                  data-bs-toggle="modal"
+                                  class="btn btn-info"
+                                >
+                                  Abrir
+                                </a>
                               </td>
                             </tr>
                           </tbody>
@@ -518,6 +726,92 @@
               data-bs-dismiss="modal"
             >
               Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-close-out" id="open-proof">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Comprovante de pagamento:
+              <strong>Carlos Antonio Garcia Freire</strong>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>COMPROVANTE!</div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary ms-auto m-0"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-close-out" id="make-payment">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Pagar:
+              <strong>Carlos Antonio Garcia Freire</strong>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column gapy-2">
+              <div>
+                <label class="form-label" for="payment-value">
+                  Valor à pagar
+                </label>
+                <div class="input-group">
+                  <span class="input-group-text">R$</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="10"
+                    id="payment-value"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="form-label" for="file">Comprovante</label>
+                <div class="input-group">
+                  <input
+                    type="file"
+                    class="form-control"
+                    placeholder="10"
+                    id="file"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary ms-auto m-0"
+              data-bs-dismiss="modal"
+            >
+              Pagar
             </button>
           </div>
         </div>
