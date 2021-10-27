@@ -142,7 +142,7 @@
                 </a>
               </li>
               <li>
-                <a href="./affiliate.html">
+                <a href="./stores.html">
                   <i data-cs-icon="shop" class="icon" data-cs-size="18"></i>
                   <span class="label">Lojas</span>
                 </a>
@@ -201,29 +201,184 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-header">
+          <div class="row gapy mb-3">
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
                   <div
-                    class="d-flex flex-row flex-wrap align-items-center gap-3"
+                    class="heading d-flex justify-content-between lh-1-25 mb-3"
                   >
-                    <h5 class="card-title m-0">Lojas</h5>
-
-                    <div class="d-flex gap-2 flex-row flex-wrap ms-auto">
-                      <button
-                        type="button"
-                        class="btn btn-quaternary flex-grow-1"
-                      >
-                        Atualizar
-                      </button>
-                      <button type="button" class="btn btn-warning flex-grow-1">
-                        Mostrar todos
-                      </button>
+                    <span>Vendas</span>
+                    <i data-cs-icon="box"></i>
+                  </div>
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <div class="text-small text-muted mb-1 text-truncate">
+                        ÚLTIMOS 30 DIAS
+                      </div>
+                      <div class="cta-1 text-primary text-truncate">
+                        R$ 1.325,67
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="text-small text-muted mb-1 text-truncate">
+                        HOJE
+                      </div>
+                      <div class="cta-1 text-primary text-truncate">
+                        R$ 325,87
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="card-body">Lojas!</div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="card-title m-0">Últimos pedidos com afiliados</h5>
+                </div>
+                <div class="card-body">
+                  <div>
+                    <canvas id="roundedBarChart" height="300"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gapy">
+            <div class="col-lg-7">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="card-title m-0">Lojas</h5>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table minw-max-content m-0">
+                      <thead>
+                        <tr>
+                          <th scope="col">Conta VTEX</th>
+                          <th scope="col">Nome fantasia</th>
+                          <th scope="col">Total de Afiliados</th>
+                          <th scope="col">Ações</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">1018612519374-01</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>27</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-quaternary mb-1"
+                            >
+                              Ver Detalhes
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row">1018612519374-01</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>27</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-quaternary mb-1"
+                            >
+                              Ver Detalhes
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row">1018612519374-01</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>27</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-quaternary mb-1"
+                            >
+                              Ver Detalhes
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row">1018612519374-01</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>27</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-quaternary mb-1"
+                            >
+                              Ver Detalhes
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td scope="row">1018612519374-01</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>27</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-quaternary mb-1"
+                            >
+                              Ver Detalhes
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="card-title m-0">Ranking de Vendas</h5>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table minw-max-content m-0">
+                      <thead>
+                        <tr>
+                          <th scope="col">Ranking</th>
+                          <th scope="col">Nome fantasia</th>
+                          <th scope="col">Total de Vendas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">1°</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>243</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">1°</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>243</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">1°</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>243</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">1°</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>243</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">1°</td>
+                          <td>Amavia - Cosmeticos de Ponta a Ponta</td>
+                          <td>243</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -254,6 +409,8 @@
     <script src="../../src/js/vendor/OverlayScrollbars.min.js"></script>
     <script src="../../src/js/vendor/autoComplete.min.js"></script>
     <script src="../../src/js/vendor/clamp.min.js"></script>
+    <script src="../../src/js/vendor/Chart.bundle.min.js"></script>
+    <script src="../../src/js/vendor/chartjs-plugin-rounded-bar.min.js"></script>
 
     <script src="../../src/font/CS-Line/csicons.min.js"></script>
     <script src="../../src/js/base/helpers.js"></script>
@@ -265,5 +422,99 @@
     <script src="../../src/js/pages/interface.icons.js"></script>
     <script src="../../src/js/common.js"></script>
     <script src="../../src/js/scripts.js"></script>
+    <script src="../../src/js/cs/charts.extend.js"></script>
+
+    <script>
+      class Charts {
+        constructor() {
+          // Initialization of the page plugins
+          if (typeof Chart === 'undefined') {
+            console.log('Chart is undefined!');
+            return;
+          }
+
+          this._roundedBarChart = null;
+          this._horizontalRoundedBarChart = null;
+
+          // Requires chartjs-plugin-rounded-bar.min.js
+          this._initRoundedBarChart();
+
+          this._initEvents();
+        }
+
+        _initEvents() {
+          // Listening for color change events to update charts
+          document.documentElement.addEventListener(
+            Globals.colorAttributeChange,
+            (event) => {
+              this._roundedBarChart && this._roundedBarChart.destroy();
+              this._initRoundedBarChart();
+            },
+          );
+        }
+
+        // Rounded bar chart
+        _initRoundedBarChart() {
+          if (document.getElementById('roundedBarChart')) {
+            const barChart = document
+              .getElementById('roundedBarChart')
+              .getContext('2d');
+            this._roundedBarChart = new Chart(barChart, {
+              type: 'bar',
+              options: {
+                cornerRadius: parseInt(Globals.borderRadiusMd),
+                plugins: {
+                  crosshair: false,
+                  datalabels: {display: false},
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                  yAxes: [
+                    {
+                      gridLines: {
+                        display: true,
+                        lineWidth: 1,
+                        color: Globals.separatorLight,
+                        drawBorder: false,
+                      },
+                      ticks: {
+                        beginAtZero: true,
+                        stepSize: 100,
+                        min: 300,
+                        max: 800,
+                        padding: 20,
+                      },
+                    },
+                  ],
+                  xAxes: [
+                    {
+                      gridLines: {display: false},
+                    },
+                  ],
+                },
+                legend: {
+                  position: 'bottom',
+                  labels: ChartsExtend.LegendLabels(),
+                },
+                tooltips: ChartsExtend.ChartTooltip(),
+              },
+              data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril'],
+                datasets: [
+                  {
+                    label: 'Vendas',
+                    borderColor: Globals.primary,
+                    backgroundColor: 'rgba(' + Globals.primaryrgb + ',0.1)',
+                    data: [456, 479, 424, 569],
+                    borderWidth: 2,
+                  },
+                ],
+              },
+            });
+          }
+        }
+      }
+    </script>
   </body>
 </html>
